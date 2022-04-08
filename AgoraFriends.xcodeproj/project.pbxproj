@@ -1,0 +1,771 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5725311B0A20496B396E7C9E /* Pods_AgoraFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8BAD43C8A8FF6689B8A7F /* Pods_AgoraFriends.framework */; };
+		E1F767FF27FC5E2000A0E45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F767FE27FC5E2000A0E45F /* AppDelegate.swift */; };
+		E1F7680127FC5E2000A0E45F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7680027FC5E2000A0E45F /* SceneDelegate.swift */; };
+		E1F7680627FC5E2000A0E45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F7680427FC5E2000A0E45F /* Main.storyboard */; };
+		E1F7680827FC5E2300A0E45F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1F7680727FC5E2300A0E45F /* Assets.xcassets */; };
+		E1F7680B27FC5E2300A0E45F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F7680927FC5E2300A0E45F /* LaunchScreen.storyboard */; };
+		E1F7681627FC5E2300A0E45F /* AgoraFriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7681527FC5E2300A0E45F /* AgoraFriendsTests.swift */; };
+		E1F7682027FC5E2300A0E45F /* AgoraFriendsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7681F27FC5E2300A0E45F /* AgoraFriendsUITests.swift */; };
+		E1F7682227FC5E2300A0E45F /* AgoraFriendsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7682127FC5E2300A0E45F /* AgoraFriendsUITestsLaunchTests.swift */; };
+		E1F7683127FC5EFB00A0E45F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7683027FC5EFB00A0E45F /* HomeController.swift */; };
+		E1F7683427FC5F3C00A0E45F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7683327FC5F3C00A0E45F /* User.swift */; };
+		E1F7684127FCDC9A00A0E45F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1F7684027FCDC9A00A0E45F /* Podfile */; };
+		E1F7684727FCEDEF00A0E45F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7684627FCEDEF00A0E45F /* Friend.swift */; };
+		E1F7684A27FD2CFA00A0E45F /* JWTDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7684927FD2CFA00A0E45F /* JWTDecoder.swift */; };
+		E1F7684E27FDA2FB00A0E45F /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7684D27FDA2FB00A0E45F /* REST.swift */; };
+		E1F7685027FDA32700A0E45F /* RESTHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7684F27FDA32700A0E45F /* RESTHandler.swift */; };
+		E1F7685227FDA37A00A0E45F /* FriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7685127FDA37A00A0E45F /* FriendsService.swift */; };
+		E1F7689A27FDD48100A0E45F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7689927FDD48100A0E45F /* Keys.swift */; };
+		E1F7689C27FDD49D00A0E45F /* VideoChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7689B27FDD49D00A0E45F /* VideoChatViewController.swift */; };
+		E1F768A027FE041C00A0E45F /* AgoraRtmKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F7689F27FE041C00A0E45F /* AgoraRtmKit.xcframework */; };
+		E1F768A227FE050500A0E45F /* AgoraRtm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768A127FE050500A0E45F /* AgoraRtm.swift */; };
+		E1F768A627FE081100A0E45F /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768A527FE081100A0E45F /* DefaultManager.swift */; };
+		E1F768B027FED8AB00A0E45F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768AF27FED8AB00A0E45F /* Message.swift */; };
+		E1F768B227FF049800A0E45F /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768B127FF049800A0E45F /* ChatController.swift */; };
+		E1F768B427FF054500A0E45F /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768B327FF054500A0E45F /* ChatUser.swift */; };
+		E1F768B627FF1FE500A0E45F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768B527FF1FE500A0E45F /* LoginViewController.swift */; };
+		E1F768B827FF22D800A0E45F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F768B727FF22D800A0E45F /* SignUpViewController.swift */; };
+		E1F768BF28005B5700A0E45F /* Lottie in Resources */ = {isa = PBXBuildFile; fileRef = E1F768BE28005B5600A0E45F /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1F7681227FC5E2300A0E45F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F767F327FC5E2000A0E45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F767FA27FC5E2000A0E45F;
+			remoteInfo = AgoraFriends;
+		};
+		E1F7681C27FC5E2300A0E45F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1F767F327FC5E2000A0E45F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1F767FA27FC5E2000A0E45F;
+			remoteInfo = AgoraFriends;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65BBCF5101E5167F4DE4CA50 /* Pods-AgoraFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraFriends.release.xcconfig"; path = "Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends.release.xcconfig"; sourceTree = "<group>"; };
+		6F123B196786236CC4AB6DF7 /* Pods-AgoraFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraFriends.debug.xcconfig"; path = "Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends.debug.xcconfig"; sourceTree = "<group>"; };
+		DFC8BAD43C8A8FF6689B8A7F /* Pods_AgoraFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F767FB27FC5E2000A0E45F /* AgoraFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F767FE27FC5E2000A0E45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1F7680027FC5E2000A0E45F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1F7680527FC5E2000A0E45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1F7680727FC5E2300A0E45F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1F7680A27FC5E2300A0E45F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1F7680C27FC5E2300A0E45F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1F7681127FC5E2300A0E45F /* AgoraFriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraFriendsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F7681527FC5E2300A0E45F /* AgoraFriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraFriendsTests.swift; sourceTree = "<group>"; };
+		E1F7681B27FC5E2300A0E45F /* AgoraFriendsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgoraFriendsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1F7681F27FC5E2300A0E45F /* AgoraFriendsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraFriendsUITests.swift; sourceTree = "<group>"; };
+		E1F7682127FC5E2300A0E45F /* AgoraFriendsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraFriendsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1F7683027FC5EFB00A0E45F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E1F7683327FC5F3C00A0E45F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E1F7684027FCDC9A00A0E45F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E1F7684627FCEDEF00A0E45F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E1F7684927FD2CFA00A0E45F /* JWTDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JWTDecoder.swift; sourceTree = "<group>"; };
+		E1F7684D27FDA2FB00A0E45F /* REST.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
+		E1F7684F27FDA32700A0E45F /* RESTHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RESTHandler.swift; sourceTree = "<group>"; };
+		E1F7685127FDA37A00A0E45F /* FriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsService.swift; sourceTree = "<group>"; };
+		E1F7689927FDD48100A0E45F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		E1F7689B27FDD49D00A0E45F /* VideoChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoChatViewController.swift; sourceTree = "<group>"; };
+		E1F7689F27FE041C00A0E45F /* AgoraRtmKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = AgoraRtmKit.xcframework; path = Frameworks/AgoraRtmKit.xcframework; sourceTree = "<group>"; };
+		E1F768A127FE050500A0E45F /* AgoraRtm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgoraRtm.swift; sourceTree = "<group>"; };
+		E1F768A527FE081100A0E45F /* DefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
+		E1F768AF27FED8AB00A0E45F /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		E1F768B127FF049800A0E45F /* ChatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		E1F768B327FF054500A0E45F /* ChatUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		E1F768B527FF1FE500A0E45F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E1F768B727FF22D800A0E45F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E1F768BE28005B5600A0E45F /* Lottie */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Lottie; path = AgoraFriends/Lottie; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1F767F827FC5E2000A0E45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F768A027FE041C00A0E45F /* AgoraRtmKit.xcframework in Frameworks */,
+				5725311B0A20496B396E7C9E /* Pods_AgoraFriends.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7680E27FC5E2300A0E45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7681827FC5E2300A0E45F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CDFB9194D8438B587C520D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7689F27FE041C00A0E45F /* AgoraRtmKit.xcframework */,
+				DFC8BAD43C8A8FF6689B8A7F /* Pods_AgoraFriends.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB2BC24CE4BC63F3D49EC956 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F123B196786236CC4AB6DF7 /* Pods-AgoraFriends.debug.xcconfig */,
+				65BBCF5101E5167F4DE4CA50 /* Pods-AgoraFriends.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1F767F227FC5E2000A0E45F = {
+			isa = PBXGroup;
+			children = (
+				E1F7684027FCDC9A00A0E45F /* Podfile */,
+				E1F767FD27FC5E2000A0E45F /* AgoraFriends */,
+				E1F7681427FC5E2300A0E45F /* AgoraFriendsTests */,
+				E1F7681E27FC5E2300A0E45F /* AgoraFriendsUITests */,
+				E1F767FC27FC5E2000A0E45F /* Products */,
+				AB2BC24CE4BC63F3D49EC956 /* Pods */,
+				E1F768BE28005B5600A0E45F /* Lottie */,
+				6CDFB9194D8438B587C520D1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1F767FC27FC5E2000A0E45F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1F767FB27FC5E2000A0E45F /* AgoraFriends.app */,
+				E1F7681127FC5E2300A0E45F /* AgoraFriendsTests.xctest */,
+				E1F7681B27FC5E2300A0E45F /* AgoraFriendsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1F767FD27FC5E2000A0E45F /* AgoraFriends */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7684827FD2CCF00A0E45F /* Utilities */,
+				E1F7683927FCA81F00A0E45F /* Handlers */,
+				E1F7683227FC5F2900A0E45F /* DataModels */,
+				E1F767FE27FC5E2000A0E45F /* AppDelegate.swift */,
+				E1F7680027FC5E2000A0E45F /* SceneDelegate.swift */,
+				E1F7683027FC5EFB00A0E45F /* HomeController.swift */,
+				E1F768B727FF22D800A0E45F /* SignUpViewController.swift */,
+				E1F768B527FF1FE500A0E45F /* LoginViewController.swift */,
+				E1F7689B27FDD49D00A0E45F /* VideoChatViewController.swift */,
+				E1F768B127FF049800A0E45F /* ChatController.swift */,
+				E1F7680427FC5E2000A0E45F /* Main.storyboard */,
+				E1F7680727FC5E2300A0E45F /* Assets.xcassets */,
+				E1F7680927FC5E2300A0E45F /* LaunchScreen.storyboard */,
+				E1F7680C27FC5E2300A0E45F /* Info.plist */,
+			);
+			path = AgoraFriends;
+			sourceTree = "<group>";
+		};
+		E1F7681427FC5E2300A0E45F /* AgoraFriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7681527FC5E2300A0E45F /* AgoraFriendsTests.swift */,
+			);
+			path = AgoraFriendsTests;
+			sourceTree = "<group>";
+		};
+		E1F7681E27FC5E2300A0E45F /* AgoraFriendsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7681F27FC5E2300A0E45F /* AgoraFriendsUITests.swift */,
+				E1F7682127FC5E2300A0E45F /* AgoraFriendsUITestsLaunchTests.swift */,
+			);
+			path = AgoraFriendsUITests;
+			sourceTree = "<group>";
+		};
+		E1F7683227FC5F2900A0E45F /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				E1F768B327FF054500A0E45F /* ChatUser.swift */,
+				E1F7683327FC5F3C00A0E45F /* User.swift */,
+				E1F768AF27FED8AB00A0E45F /* Message.swift */,
+				E1F7684627FCEDEF00A0E45F /* Friend.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		E1F7683927FCA81F00A0E45F /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7684D27FDA2FB00A0E45F /* REST.swift */,
+				E1F7684F27FDA32700A0E45F /* RESTHandler.swift */,
+				E1F7685127FDA37A00A0E45F /* FriendsService.swift */,
+			);
+			path = Handlers;
+			sourceTree = "<group>";
+		};
+		E1F7684827FD2CCF00A0E45F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E1F7684927FD2CFA00A0E45F /* JWTDecoder.swift */,
+				E1F7689927FDD48100A0E45F /* Keys.swift */,
+				E1F768A127FE050500A0E45F /* AgoraRtm.swift */,
+				E1F768A527FE081100A0E45F /* DefaultManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1F767FA27FC5E2000A0E45F /* AgoraFriends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F7682527FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriends" */;
+			buildPhases = (
+				1CEF3580690E9550A1E9DC67 /* [CP] Check Pods Manifest.lock */,
+				E1F767F727FC5E2000A0E45F /* Sources */,
+				E1F767F827FC5E2000A0E45F /* Frameworks */,
+				E1F767F927FC5E2000A0E45F /* Resources */,
+				048F9A40674D8FB2DA6DB627 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgoraFriends;
+			productName = AgoraFriends;
+			productReference = E1F767FB27FC5E2000A0E45F /* AgoraFriends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1F7681027FC5E2300A0E45F /* AgoraFriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F7682827FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriendsTests" */;
+			buildPhases = (
+				E1F7680D27FC5E2300A0E45F /* Sources */,
+				E1F7680E27FC5E2300A0E45F /* Frameworks */,
+				E1F7680F27FC5E2300A0E45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F7681327FC5E2300A0E45F /* PBXTargetDependency */,
+			);
+			name = AgoraFriendsTests;
+			productName = AgoraFriendsTests;
+			productReference = E1F7681127FC5E2300A0E45F /* AgoraFriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1F7681A27FC5E2300A0E45F /* AgoraFriendsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1F7682B27FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriendsUITests" */;
+			buildPhases = (
+				E1F7681727FC5E2300A0E45F /* Sources */,
+				E1F7681827FC5E2300A0E45F /* Frameworks */,
+				E1F7681927FC5E2300A0E45F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1F7681D27FC5E2300A0E45F /* PBXTargetDependency */,
+			);
+			name = AgoraFriendsUITests;
+			productName = AgoraFriendsUITests;
+			productReference = E1F7681B27FC5E2300A0E45F /* AgoraFriendsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1F767F327FC5E2000A0E45F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E1F767FA27FC5E2000A0E45F = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E1F7681027FC5E2300A0E45F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E1F767FA27FC5E2000A0E45F;
+					};
+					E1F7681A27FC5E2300A0E45F = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E1F767FA27FC5E2000A0E45F;
+					};
+				};
+			};
+			buildConfigurationList = E1F767F627FC5E2000A0E45F /* Build configuration list for PBXProject "AgoraFriends" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1F767F227FC5E2000A0E45F;
+			productRefGroup = E1F767FC27FC5E2000A0E45F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1F767FA27FC5E2000A0E45F /* AgoraFriends */,
+				E1F7681027FC5E2300A0E45F /* AgoraFriendsTests */,
+				E1F7681A27FC5E2300A0E45F /* AgoraFriendsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1F767F927FC5E2000A0E45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F768BF28005B5700A0E45F /* Lottie in Resources */,
+				E1F7680B27FC5E2300A0E45F /* LaunchScreen.storyboard in Resources */,
+				E1F7680827FC5E2300A0E45F /* Assets.xcassets in Resources */,
+				E1F7684127FCDC9A00A0E45F /* Podfile in Resources */,
+				E1F7680627FC5E2000A0E45F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7680F27FC5E2300A0E45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7681927FC5E2300A0E45F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048F9A40674D8FB2DA6DB627 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CEF3580690E9550A1E9DC67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AgoraFriends-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1F767F727FC5E2000A0E45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F768B427FF054500A0E45F /* ChatUser.swift in Sources */,
+				E1F768A627FE081100A0E45F /* DefaultManager.swift in Sources */,
+				E1F767FF27FC5E2000A0E45F /* AppDelegate.swift in Sources */,
+				E1F768A227FE050500A0E45F /* AgoraRtm.swift in Sources */,
+				E1F7684E27FDA2FB00A0E45F /* REST.swift in Sources */,
+				E1F7680127FC5E2000A0E45F /* SceneDelegate.swift in Sources */,
+				E1F7689A27FDD48100A0E45F /* Keys.swift in Sources */,
+				E1F7684727FCEDEF00A0E45F /* Friend.swift in Sources */,
+				E1F768B227FF049800A0E45F /* ChatController.swift in Sources */,
+				E1F7684A27FD2CFA00A0E45F /* JWTDecoder.swift in Sources */,
+				E1F768B627FF1FE500A0E45F /* LoginViewController.swift in Sources */,
+				E1F7683427FC5F3C00A0E45F /* User.swift in Sources */,
+				E1F7683127FC5EFB00A0E45F /* HomeController.swift in Sources */,
+				E1F7685027FDA32700A0E45F /* RESTHandler.swift in Sources */,
+				E1F7685227FDA37A00A0E45F /* FriendsService.swift in Sources */,
+				E1F768B027FED8AB00A0E45F /* Message.swift in Sources */,
+				E1F7689C27FDD49D00A0E45F /* VideoChatViewController.swift in Sources */,
+				E1F768B827FF22D800A0E45F /* SignUpViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7680D27FC5E2300A0E45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F7681627FC5E2300A0E45F /* AgoraFriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1F7681727FC5E2300A0E45F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1F7682027FC5E2300A0E45F /* AgoraFriendsUITests.swift in Sources */,
+				E1F7682227FC5E2300A0E45F /* AgoraFriendsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1F7681327FC5E2300A0E45F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1F767FA27FC5E2000A0E45F /* AgoraFriends */;
+			targetProxy = E1F7681227FC5E2300A0E45F /* PBXContainerItemProxy */;
+		};
+		E1F7681D27FC5E2300A0E45F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1F767FA27FC5E2000A0E45F /* AgoraFriends */;
+			targetProxy = E1F7681C27FC5E2300A0E45F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1F7680427FC5E2000A0E45F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F7680527FC5E2000A0E45F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1F7680927FC5E2300A0E45F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1F7680A27FC5E2300A0E45F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1F7682327FC5E2300A0E45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1F7682427FC5E2300A0E45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1F7682627FC5E2300A0E45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F123B196786236CC4AB6DF7 /* Pods-AgoraFriends.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JL7DGUH3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgoraFriends/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1F7682727FC5E2300A0E45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65BBCF5101E5167F4DE4CA50 /* Pods-AgoraFriends.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4JL7DGUH3H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AgoraFriends/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriends;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1F7682927FC5E2300A0E45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgoraFriends.app/AgoraFriends";
+			};
+			name = Debug;
+		};
+		E1F7682A27FC5E2300A0E45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriendsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgoraFriends.app/AgoraFriends";
+			};
+			name = Release;
+		};
+		E1F7682C27FC5E2300A0E45F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgoraFriends;
+			};
+			name = Debug;
+		};
+		E1F7682D27FC5E2300A0E45F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qwerty.call.AgoraFriendsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgoraFriends;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1F767F627FC5E2000A0E45F /* Build configuration list for PBXProject "AgoraFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F7682327FC5E2300A0E45F /* Debug */,
+				E1F7682427FC5E2300A0E45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1F7682527FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F7682627FC5E2300A0E45F /* Debug */,
+				E1F7682727FC5E2300A0E45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1F7682827FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F7682927FC5E2300A0E45F /* Debug */,
+				E1F7682A27FC5E2300A0E45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1F7682B27FC5E2300A0E45F /* Build configuration list for PBXNativeTarget "AgoraFriendsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1F7682C27FC5E2300A0E45F /* Debug */,
+				E1F7682D27FC5E2300A0E45F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1F767F327FC5E2000A0E45F /* Project object */;
+}
