@@ -35,7 +35,6 @@ class ChatController: MessagesViewController, ShowAlertProtocol, MessagesLayoutD
             login()
         addVideoButton()
         addGiftButton()
-
     }
     
     func addVideoButton() {
@@ -117,8 +116,6 @@ extension ChatController: MessagesDataSource {
     func numberOfSections(in messagesCollectionView: MessagesCollectionView) -> Int {
         return messageList.count
     }
-    
-    
 }
 
 // MARK: - InputBarAccessoryViewDelegate

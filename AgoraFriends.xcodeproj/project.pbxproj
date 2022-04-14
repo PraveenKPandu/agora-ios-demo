@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5725311B0A20496B396E7C9E /* Pods_AgoraFriends.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFC8BAD43C8A8FF6689B8A7F /* Pods_AgoraFriends.framework */; };
+		E190AD8E28084DB000453692 /* StatsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E190AD8D28084DB000453692 /* StatsInfo.swift */; };
 		E1F767FF27FC5E2000A0E45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F767FE27FC5E2000A0E45F /* AppDelegate.swift */; };
 		E1F7680127FC5E2000A0E45F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F7680027FC5E2000A0E45F /* SceneDelegate.swift */; };
 		E1F7680627FC5E2000A0E45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1F7680427FC5E2000A0E45F /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		65BBCF5101E5167F4DE4CA50 /* Pods-AgoraFriends.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraFriends.release.xcconfig"; path = "Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends.release.xcconfig"; sourceTree = "<group>"; };
 		6F123B196786236CC4AB6DF7 /* Pods-AgoraFriends.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AgoraFriends.debug.xcconfig"; path = "Target Support Files/Pods-AgoraFriends/Pods-AgoraFriends.debug.xcconfig"; sourceTree = "<group>"; };
 		DFC8BAD43C8A8FF6689B8A7F /* Pods_AgoraFriends.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AgoraFriends.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E190AD8D28084DB000453692 /* StatsInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsInfo.swift; sourceTree = "<group>"; };
 		E1F767FB27FC5E2000A0E45F /* AgoraFriends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgoraFriends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1F767FE27FC5E2000A0E45F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1F7680027FC5E2000A0E45F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				E1F7684927FD2CFA00A0E45F /* JWTDecoder.swift */,
 				E1F7689927FDD48100A0E45F /* Keys.swift */,
 				E1F768A127FE050500A0E45F /* AgoraRtm.swift */,
+				E190AD8D28084DB000453692 /* StatsInfo.swift */,
 				E1F768A527FE081100A0E45F /* DefaultManager.swift */,
 			);
 			path = Utilities;
@@ -414,6 +417,7 @@
 				E1F7684E27FDA2FB00A0E45F /* REST.swift in Sources */,
 				E1F7680127FC5E2000A0E45F /* SceneDelegate.swift in Sources */,
 				E1F7689A27FDD48100A0E45F /* Keys.swift in Sources */,
+				E190AD8E28084DB000453692 /* StatsInfo.swift in Sources */,
 				E1F7684727FCEDEF00A0E45F /* Friend.swift in Sources */,
 				E1F768B227FF049800A0E45F /* ChatController.swift in Sources */,
 				E1F7684A27FD2CFA00A0E45F /* JWTDecoder.swift in Sources */,

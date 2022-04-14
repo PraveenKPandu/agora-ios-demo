@@ -72,7 +72,6 @@ class HomeController: UITableViewController, ShowAlertProtocol  {
             login()
             getToken()
         }
-
     }
     
     func generateChannelName () -> String {
@@ -158,11 +157,9 @@ class HomeController: UITableViewController, ShowAlertProtocol  {
                             self.getFriends()
                         }
                     }
-                    
                 } catch {
                     print(error.localizedDescription)
                 }
-                
             case .failure(let error):
                 print(error.localizedDescription)
             case .empty:

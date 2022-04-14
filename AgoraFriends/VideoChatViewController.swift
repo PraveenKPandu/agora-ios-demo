@@ -25,6 +25,8 @@ class VideoChatViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var incallStats : UILabel!
     weak var delegate: VideoVCDelegate?
+    
+    
 
     let userDefaults = UserDefaults.standard
     var friendId : UInt!
@@ -131,7 +133,7 @@ class VideoChatViewController: UIViewController {
         // same channel successfully using the same app id.
         // 2. One token is only valid for the channel name that
         // you use to generate this token.
-        agoraKit.joinChannel(byToken: userDefaults.getVideoToken() , channelId: "Meets123", info: nil, uid: UInt(uid)) { [unowned self] (channel, uid, elapsed) -> Void in
+        agoraKit.joinChannel(byToken: userDefaults.getVideoToken() , channelId: "Meets", info: nil, uid: UInt(uid)) { [unowned self] (channel, uid, elapsed) -> Void in
             // Did join channel "demoChannel1"
             self.isLocalVideoRender = true
         }
@@ -144,7 +146,7 @@ class VideoChatViewController: UIViewController {
         
         let api = RESTHandler<FriendsService>()
         api.load(REST: .getVideoToken(uid: String(userAcc) ,
-                                      channelName: "Meets123",
+                                      channelName: "Meets",
                                       role: "publisher",
                                         expiryTime: "10000"))
                                         { result in
@@ -181,7 +183,6 @@ class VideoChatViewController: UIViewController {
                 print("No data")
             }
         }
-
     }
     
     
@@ -214,7 +215,6 @@ class VideoChatViewController: UIViewController {
                 self.dismiss(animated: true, completion: ( {
                 }))
             }
-            
         } else {
             setupLocalVideo()
             joinChannel()
@@ -317,8 +317,15 @@ extension VideoChatViewController: AgoraRtcEngineDelegate {
     }
     
     func rtcEngine(_ engine: AgoraRtcEngineKit, reportRtcStats stats: AgoraChannelStats) {
-        incallStats.text = "Tx video Bitrate :\(stats.txVideoKBitrate)"
+        
+        var statsMeans : (Float, Float, Float) = StatsInfo.addnewValueToList(tx: stats.txKBitrate, rx: stats.rxKBitrate, lastmile: stats.lastmileDelay)
+        
+        
+        incallStats.text = "Tx video Bitrate :\(statsMeans.0)  Rx video Bitrate: \(statsMeans.1) lastMile : \(statsMeans.2)"
+
     }
+    
+    
     
     /// Occurs when a remote user’s video stream playback pauses/resumes.
     /// - Parameters:
